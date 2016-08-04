@@ -1,0 +1,25 @@
+{
+  "name": "Mitigation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Board.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agee6/Mitigation2.0.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agee6/Mitigation/issues"
+  },
+  "homepage": "https://github.com/agee6/Mitigation#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "socket.io": "^1.4.8",
+    "webpack": "^1.13.1"
+  }
+}
