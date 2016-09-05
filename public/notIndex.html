@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mitigation!</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <button id="main-button">Begin Game!</button>
+    <div id='instruction-area'>
+      <div id='instruction-div'></div>
+      <div id='warning-div'></div>
+    </div>
+    <div id="turnDiv"></div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">x</span>
+        <p id="introText" class="modal-text">Welcome to Mitigation! This is a game like risk, but where battles are not based on
+          the random roll of the dice, but rather on the stragey of how many men are put forward in a given battle.
+          Game play goes similar to risk, except if you want to attack another country, when it is your turn you can declare a war.
+          Upon declaration you insantly engage in the first battle. Each War lasts at least 3 turns and maximum 4.
+          If the aggressing army wins three battles, they have won the war and occupy the country, taking any remaining men lef in the country.
+          A battle happens when each side chooses the number of men they have on the country to go to "battle" whoever has more soldiers at
+          the battle wins the battle. One half of the men who go to war are "killed" and the other half return to their country.
+          both players may move men into and out of the country at the end of their respective turns.
+          So let's get started!
+        </p>
+        <div >
+          <label id="input-label">Please Input your name</label>
+          <input id='user-input' type="text" name="userInput" value="nero" >
+          <button id="user-input-button" class="user-button" disabled="true">submit
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src='bundle.js'></script>
+
+    <div id="the-game">
+      <img style="height: 100%;" src="risk_big.jpg" />
+      <div class="country" id=NorthAmerica> owner: blank troops: 0</div>
+      <div class="country" id=SouthAmerica> owner: blank, troops: 0</div>
+      <div class="country" id=Europe> owner: blank troops: 0</div>
+
+      <div class="country" id=MiddleEast> owner: blank troops: 0</div>
+      <div class="country" id=Africa> owner: blank troops: 0</div>
+      <div class="country" id=Australia> owner: blank troops: 0</div>
+      <div class="country" id=Asia>owner: blank troops: 0</div>
+
+      <div class="finished-moving" id="finished-moving" style="display: none">Done Moving Men</div>
+
+    </div>
+
+
+
+  </body>
+</html>

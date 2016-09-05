@@ -2,9 +2,10 @@
   "name": "Mitigation",
   "version": "1.0.0",
   "description": "",
-  "main": "Board.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "dependencies": {
     "express": "^4.13.3",
     "socket.io": "^1.4.8",
-    "webpack": "^1.13.1"
+    "webpack": "^1.13.1",
+    "ejs": "2.4.1"
   }
 }
