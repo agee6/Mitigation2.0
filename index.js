@@ -21,9 +21,10 @@ app.get('/', function(req, res){
   res.render('index.ejs');
 });
 
-app.post('/', function(req, res){
-  
-})
+app.post('/api/session', function(req, res){
+
+  res.json("banana"); 
+});
 // var numUsers = 0;
 //
 // io.on('connection', function (socket) {

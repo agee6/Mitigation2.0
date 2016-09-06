@@ -20,13 +20,19 @@ var util = {
     });
 
   },
-  starGame: function(){
+  starGame: function(string){
     //get user input
     //Do hash
 
     // send hash as the API
 
-    
+    var gameCode = string.hashCode();
+    $.post({
+      url: '/api/session',
+      success: function(payload){
+        console.log('new game started');
+      }
+    }); 
 
 
   }
