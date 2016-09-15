@@ -26,19 +26,22 @@ var util = {
     //Do hash
 
     // send hash as the API
-
-    var gameCode = window.btoa(string); 
+    console.log('banana');
+    var gameCode = window.btoa(string);
     $.post({
       url: '/api/session',
       data:{gameCode: gameCode},
       success: function(payload){
         console.log('new game started');
+        socket.emit('addPlayer', "player1"); 
       }
     });
 
 
   }
 };
+
+var socket = io();
 
 
 var startButton = document.getElementById('start-game');
